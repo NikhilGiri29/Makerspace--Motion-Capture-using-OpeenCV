@@ -21,31 +21,7 @@ thres = 150  # --> change it if any problem (Decrease if smoll hands, Increase i
 while True:
     success, img = cap.read()
     img = cv2.flip(img, 1)
-    '''
-    img = detector.findHands(img)
-    lmList = detector.findPosition(img)
-    if len(lmList) != 0:
-        x = (lmList[12][1] - lmList[0][1])
-        y = (lmList[12][2] - lmList[0][2])
-        print(x, y)
-
-        if y > thres and flag != 'd':
-            print("==================down===========================")
-            flag = 'd'
-
-        elif y < -thres and flag != 'u':
-            print("=================up===============================")
-            flag = 'u'
-
-        elif x > thres and flag != 'l':
-            print("===============left===========================")
-            flag = 'l'
-
-        elif x < -thres and flag != 'r':
-            print("===============right===========================")
-            flag = 'r'
-    '''
-
+  
     temp = flag
     flag = detector.direction_hand(img, thres, 12, 0, flag)
     #### if hand is pointing down and the last input was not down ####
