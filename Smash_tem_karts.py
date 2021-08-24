@@ -7,6 +7,15 @@
 # Enjoy!!!!                                                               #
 ###########################################################################
 
+########################## POSSIBLE ISSUES(bugs) ##########################
+# 1.Sometimes due to poor camera quality or lighting the the left_or_right#
+#   hand detector loses confidence and can switch the left and right hand.#
+# SOLUTION --> remove both hands from frame and then bring them back      #
+#             together. This shall make the module to rerun the detection #
+#               and fix the error.                                        #
+###########################################################################
+
+
 #### Imports ####
 import cv2
 import time
