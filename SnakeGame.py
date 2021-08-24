@@ -1,3 +1,9 @@
+###########################################################################
+# This File is the pygame implementation of snakes game made by me.       #
+# Run this script along with "hand_direction_control.py" file and         #
+#  select the game tab and enjoy playing. You can also run this script    #
+# without the other script and enjoy playing with the keyboard.           #
+###########################################################################
 # Pygame implementation of snakes games
 
 #### Imports ####
