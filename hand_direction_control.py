@@ -1,3 +1,10 @@
+############################################################################
+# This File is the Keyboard input simulator which takes input depending on #
+# the direction the user's hands is pointing. If running for the first     #
+# time I suggest running with "SnakeGame.py" file. Though remember to keep #
+# the snake game tab selected so that thee keyboard inputs are read there. #
+# Enjoy!!!!                                                                #
+############################################################################
 
 #### Imports ####
 import cv2
@@ -21,7 +28,7 @@ thres = 150  # --> change it if any problem (Decrease if smoll hands, Increase i
 while True:
     success, img = cap.read()
     img = cv2.flip(img, 1)
-  
+   
     temp = flag
     flag = detector.direction_hand(img, thres, 12, 0, flag)
     #### if hand is pointing down and the last input was not down ####
