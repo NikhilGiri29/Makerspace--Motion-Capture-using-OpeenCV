@@ -1,6 +1,13 @@
+###########################################################################
+# This File is the Keyboard input simulator which takes input depending   #
+# whether a certain finger of user is open or closed. If running for the  #
+# first time I suggest running with Smashkart game available on           #
+# "https://smashkarts.io/" . Though remember to keep the smashkart game   #
+# tab selected so that thee keyboard inputs are read there.               #
+# Enjoy!!!!                                                               #
+###########################################################################
 
 #### Imports ####
-
 import cv2
 import time
 import HandTrackingModule as htm
